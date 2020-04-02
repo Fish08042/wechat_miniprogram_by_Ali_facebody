@@ -1,0 +1,36 @@
+<!--miniprogram/pages/addInfo/addInfo.wxml-->
+<view class="container">
+    <view class="bg"  style="opacity:{{0.5}}">
+    <image class="bg-image" mode="scaleToFill"></image>
+  </view>
+
+  <view class='title'>  
+    <text>添加信息</text>  
+  </view>  
+    
+  <view>  
+  <form bindsubmit="formSubmit" bindreset="formReset">  
+    <view class='main'>  
+      <lable class='lable'>姓名：</lable>  
+      <input class='input' type='text' bindinput="getName" placeholder='请输入您的姓名'/>  
+    </view>  
+    <view class='main2'>    
+      <lable class='lable'>学号：</lable>  
+      <input class='input' type='text' bindinput="getStudentId"  placeholder="请输入您的学号"/>  
+    </view>  
+
+    <view class='main2'>    
+      <lable class='lable'>班级：</lable>  
+      <input class='input' type='text' bindinput="getClass"  placeholder="请输入您的学号"/>  
+    </view>  
+
+    <view class='upload_img'>  
+      <button type='default'  bindtap="doUpload_regist">上传照片</button>  
+    </view>  
+    <view class='bottom'>  
+      <button type='primary'  bindtap="submit">提交</button>  
+    </view>  
+  </form>  
+  </view>  
+
+</view>
